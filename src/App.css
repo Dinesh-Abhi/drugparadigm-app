@@ -1,0 +1,124 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+/* Hero section gradient for light mode */
+.hero-gradient {
+  background-image: 
+    radial-gradient(circle at 30% 20%, rgba(51, 115, 176, 0.08) 0%, rgba(255, 255, 255, 0) 50%),
+    linear-gradient(to bottom right, rgba(51, 115, 176, 0.05), rgba(255, 255, 255, 0)),
+    linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(190, 212, 233, 0.3));
+}
+
+/* Hero section gradient for dark mode */
+.dark .hero-gradient {
+  background-image: 
+    radial-gradient(circle at 30% 20%, rgba(51, 115, 176, 0.15) 0%, rgba(28, 33, 39, 0) 70%),
+    linear-gradient(to bottom right, rgba(11, 56, 95, 0.1), rgba(28, 33, 39, 0)),
+    linear-gradient(to bottom, rgba(28, 33, 39, 1), rgba(11, 56, 95, 0.8));
+}
+
+
+/* Code block styling */
+pre {
+  font-family: "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
+  position: relative;
+}
+
+pre::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #ff5f56;
+  box-shadow: 
+    1.1rem 0 0 0 #ffbd2e,
+    2.2rem 0 0 0 #27c93f;
+  opacity: 0.8;
+}
+
+/* Custom scrollbar for code blocks */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.dark pre::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Animation for new badge */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+a[data-supertokens="superTokensBranding"] {
+  display: none !important;
+}
