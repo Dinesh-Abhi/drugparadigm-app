@@ -1,0 +1,40 @@
+# dependencies
+/node_modules
+
+# IDE
+/.idea
+/.awcache
+/.vscode
+
+# misc
+npm-debug.log
+
+# example
+/quick-start
+
+# tests
+/coverage
+/.nyc_output
+
+# dist
+/dist
+
+# logs
+/logs
+ormlogs.log
+
+#env
+*.env
+yarn.lock
+package-lock.json
+
+#k8s
+/mysql
+*.sql
+*.zip
+*.rar
+/k8s
+/mysql_data
+/public
+/migrations
+/certificate
